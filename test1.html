@@ -1,0 +1,181 @@
+<head>
+    <title>Estructura Básica HTML5 con CSS Inline</title>
+    <!--se paso el style a un archivo independiente-->
+   <link rel="stylesheet" href="style/style.css">
+</head>
+<!--HTML solo esta cerrado -->
+<html>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
+    <div style="background-color: #2c3e50; padding: 1rem; color: white; text-align: center;">
+        <h1 style="font-family:Segoe UI;">Mi pagina web con <b>HTML5 & CSS3</b>  <kbd>|</kbd> <i> V 1.0 </i></h1>
+        <nav style="margin-top: 1rem;">
+            <a href="#INCIO" style="color: white; text-decoration: none; margin: 0 1rem;">INICIO</a>
+            <a href="#SERVICIOS" style="color: white; text-decoration: none; margin: 0 1rem;">SERVICIOS</a>
+            <a href="#CONTACTO" style="color: white; text-decoration: none; margin: 0 1rem;">CONTACTO</a>
+        </nav>
+    </div>
+  <!-- Este es la tematica principal de mi paguina web -->
+    <main style="max-width: 1200px; margin: 0 auto; padding: 2rem;">
+        <hr>
+        <h1 style="font-family:Segoe UI;"> Estructura Básica usando <b>HTML5 & CSS3</b> </h1>
+        <hr>
+        <section style="margin-bottom: 2rem;">
+            <h2 style="color: #2c3e50; border-bottom: 2px solid #2c3e50; padding-bottom: 0.5rem;">
+                Ejercicio Practico
+            </h2>
+            <p style="margin: 1rem 0;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+        </section>
+
+        <article style="background-color: #f5f5f5; padding: 1.5rem; border-radius: 5px;">
+            <h3 style="margin-top: 0; color: #2c3e50;">REFACTORIZACIÓN DE CODIGO HTML & CSS</h3>
+            <ol >
+                <li style="margin: 1rem 0;">Revisa la buenas practicas de maquetación dentro del codigo HTML</li>
+                <li style="margin: 1rem 0;">Tu misión es separar el codigo CSS contenido dentro del codigo HTML con el tipo de definición inline,
+                    deberas crear las clases css correspondientes sin que el diseño se vea afectado y crear un archivo de 
+                    estilos que contenga todo el codigo CSS.
+                </li>
+        </article>
+   
+
+    <!--agregar esta seccion al main porque todo es contenido-->
+    
+   <article style="background-color: #f5f5f5; padding: 1.5rem; border-radius: 5px; justify-content: center; ">
+            <h3 style="margin-top: 0; color: #2c3e50;">Bienvenido</h3>
+             <p>Esta es una introducción a HTML el lenguaje base para construir paginas web.</p>
+            <h3>Diseño Responsivo</h3>
+               <p>El diseño Responsivo en una web site significa que nuestra pagina web debera adaptarse a las dimensiones de los distintos dispositivos que existen.</p>
+                <img src="https://miro.medium.com/v2/resize:fit:750/1*3y-iWJz57eG-6AF6QSXp5w.jpeg" alt="one-piece" height="250" width="400">
+                <br>
+                <p>Mi experiencia comenzando a aprender HTML y CSS</p>
+                <p><kbd>|</kbd> <i>AUTOR: Valeria Meneses</i></p>
+   </article>
+    </main>
+    <div>
+    <section  id="INICIO" style="padding: 80px 0;  min-height: 10vh; display: flex;">
+        <div style="max-width: 900px; padding: 0 15px; margin: auto;">
+            <div style="display: flex; justify-content: space-between;">
+       
+                <div class="section-card">
+                    <span style="background-color: #2c3e50;">1</span>
+                    <h2>INICIO </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a style="background-color: #2c3e50;" href="#INICIO">Saber más</a>
+                </div>
+                <div class="section-card">
+                    <span style="background-color: #2c3e50;">2</span>
+                    <h2>SERVICIOS</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <a style="background-color: #2c3e50;" href="#SERVICIOS">Saber más</a>
+                </div>
+                <div class="section-card">
+                    <span style="background-color: #2c3e50;">3</span>
+                    <h2>CONTACTO</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <a style="background-color: #2c3e50;" href="#CONTACTO">Saber más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </div>
+    
+ 
+
+    <section id="SERVICIOS" style="font-family: 'Segoe UI';">
+    
+      <aside style="background-color: #2c3e50 ; padding: 1vmax; ">
+        <h2 style="background-color: whitesmoke;"> Servicios</h2>
+        <p style="background-color: whitesmoke;"> Ofrecemos desarrollo web, diseño responsivo y más...   </p >
+
+
+        <h2 style="font-family: 'Verdana'; color: rgb(154, 200, 255);">Codigo HTML Embebido</h2>
+        <h3 style="font-family: 'Segoe UI'; color: rgb(193, 240, 232);">Este link te explica como insertar codigo enbebido dentro de tu codigo html</h3>
+        <button type="custom_button"> <a href="https://www.youtube.com/watch?v=5UGkOt0Mngg"  target="_blank"> Ver Video</a> 
+        </button> 
+         <br> 
+         <br> 
+        <hr>
+         <br>
+
+
+          <div style="background-color: #ffffff; padding: 1.5rem; border-radius: 5px;">
+            <h3>Esta es una tabla unicamente utilizando codigo HTML</h3>
+            <br/> 
+            <!--error en  la linea 109 de sintaxis-->
+              <!--<table align="center" width=100%; padding: 1.5rem">-->
+              <table style="align-content:center width=100%; padding: 1.5rem;">
+                  <thead style="page-break-inside:avoid; page-break-after:auto; background-color:#337AB7; color:white; font-size:small; border: 20em">
+                            <tr style="height: 50px;">
+                            <th style="height: 50px;"> Entidad Bancaria </th>
+                            <th style=" height: 50px;"> Número de cuenta </th>
+                            <th style=" height: 50px;"> Moneda </th>                   
+                            <th style="height: 50px;"> Propietario de la cuenta</th>  
+                            <th style="height: 50px;"> Monto de la cuenta</th>
+                            <th style=" height: 50px;"> Fecha de apertura </th>                
+                        </tr>
+                    </thead>
+                        <tbody>
+                            <tr style="page-break-inside:avoid; page-break-after:auto">
+                                <td style="text-align:center; height: 50px;"> Banpro </td>
+                                <td style="text-align:center; height: 50px;"> 109254478 </td>
+                                <td style="text-align:center; height: 50px;"> ($) Dolares</td>
+                                <td style="text-align:center; height: 50px;"> Marcelo Vasquez</td>
+                                <td style="text-align:center; height: 50px;"> 500</td>
+                                <td style="text-align:center; height: 50px;"> 31/03/2024</td>
+                            </tr>
+                    </tbody>
+                </table>
+        </div>
+
+
+      </aside>
+  </section>  
+    <section style="text-align: center;">
+        <h2>HTML Graphics</h2>
+        <p>Ejemplo de dibujo con Canvas:</p>
+        <canvas id="myCanvas" width="400" height="200" style="border:1px solid #000;"></canvas>
+    </section>  
+  <br/>
+  <aside style="background-color: rgba(15, 36, 56, 0.993) ; padding: 1vmax; ">
+    <section  id="CONTACTO" style="padding: 80px 0;  min-height: 10vh; display: flex;  justify-content: center;">
+        <div style="max-width: 900px; padding: 0 15px; margin: auto;">
+            <div style="display: flex; justify-content: space-between;">
+       
+                    <div class="section-card" style="width:100%; background-color:#ffffff;">
+                        <!--agregar la propiedad embed en lugar de watch en el scr para que sepa que es externo, ademas de agregar propiedades -->
+                        <!--<iframe width="420" height="315" src="https://www.youtube.com/watch?v=5UGkOt0Mngg" >Video</iframe>-->
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ptc4Awb0UpU?si=VZqjQvZ5W_xccj5z" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>Video</iframe>
+                        <br>
+                        <br>
+                        
+                        <!--agregar id para poder iniciar el video-->
+                        <button id="mybtn" type="button" onclick="myFunction()"> Ver Video</button>
+                        <br>
+                        <br>
+                        <h2 style="color:#000000;"> CONTACTO</h2>
+                        <p>Deja tu correo para conocer más sobre nuestras promociones.</p>
+                        <form  action="/enviar" method="POST">
+                            <label for="e-mail">Escribe tu Email:</label>
+                            <input style="height: 25px; width: 200px; border-radius: 5px; text-align: center;" type="email" id="e-mail" name="e-mail" required="">                        
+                         
+                            <a style="background-color: #000000;" href="#SERVICIOS">Enviar</a>
+                        
+                        </form>
+                    </div>
+                </div>
+            </div>
+       </section>
+    </aside>
+    
+    <!--Se paso el script a un archivo independiente .js-->
+    <script src="JS/script.js"></script>
+    <footer style="background-color: #2c3e50; color: white; text-align: center; padding: 1rem; position: relative; bottom: 0; width: 100%;">
+        <!-- esta mal el signo de copyright debe de ser con small y &copy; -->
+        <!-- <p style="margin: 0;">© 2025 Todos los derechos reservados </p> -->
+         <small>&copy; 2025 Todos los derechos reservados</small>
+    </footer>
+</body>
+</html>
